@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    //bai3
+    let number = parseInt(prompt("Nhập một số nguyên: "));
+    function isFibonacci(num) {
+        let a=1;
+        let b=0;
+        let temp=0;
+        let i=0;
+        let checker = false;
+        while (i < num) {
+            temp = a;
+            a = a+b;
+            b = temp;
+            if (num === a){
+                checker = true;
+                break;
+            }
+            i++;
+        }
+        return checker;
+    }
+    let check = isFibonacci(number);
+    console.log(check);
+</script>
+</body>
+</html>

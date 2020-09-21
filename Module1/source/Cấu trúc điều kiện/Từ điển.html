@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[Bài tập] Từ điển</title>
+</head>
+<body>
+<script>
+    let words=prompt("Nhap tu tieng anh can tra: ");
+    let checks=true;
+    let us=["one","tow","three","four","five","six","seven","eight","nine","ten"];
+    let vn=["một","hai","ba","bốn","năm","sáu","bảy","tám","chín","mười"];
+    for (let i=0; i<us.length; i++) {
+        if (words == us[i]) {
+            alert("Nghia cua tu: " + us[i] + " la " + vn[i]);
+            checks=false;
+            break;
+        }
+    }
+    if (checks===true) {
+        alert("Khong tim thay");
+    }
+</script>
+</body>
+</html>

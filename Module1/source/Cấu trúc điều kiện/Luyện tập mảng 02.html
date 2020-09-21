@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[*Bài tập] Luyện tập mảng 02</title>
+</head>
+<body>
+<script>
+    document.write('<h1>' + "Bài 1:" + '</h1>');
+    let arr = [
+        [1, 2, 1, 24],
+        [8, 11, 9, 4],
+        [7, 0, 7, 27],
+        [7, 4, 28, 14],
+        [3, 10, 26, 7]
+    ];
+    let arr1=[1, 2, 1, 24];
+    for (let i in arr) {
+        document.write("row "+ '<br>' + i);
+        for (let j in arr[i])  {
+            document.write('<br>' + arr[i][j]);
+        }
+    }
+    document.write('<h1>' + "Bài 2:" + '</h1>');
+    let array=['c', 's', 'c', '2', '6', '1'];
+    let congchuoi=[];
+    for (i=1; i <= array.length; i++) {
+        congchuoi += array[array.length - i];
+    }
+    document.write(congchuoi + '<br>');
+
+    document.write('<h1>' + "Bài 3:" + '</h1>');
+    let arr_length=0;
+    for (i=0; i<arr.length; i++) {
+        arr_length += arr[i].length;
+    }
+    document.write(arr_length + '<br>');
+
+    document.write('<h1>' + "Bài 4:" + '</h1>');
+    let sotu=0;
+    for (i=0; i<array.length; i++) {
+        if (array[i]) {
+            sotu++;
+        }
+    }
+    document.write("So tu trong chuoi la: " + sotu + '<br>');
+
+    document.write('<h1>' + "Bài 5:" + '</h1>');
+    let chuoi_1=prompt("Nhap chuoi 1");
+    let chuoi_2=prompt("Nhap chuoi 2");
+    let kiemtra=0;
+    for (i=0; i<chuoi_1.length; i++) {
+        for (j=0; j<chuoi_2.length; j++) {
+            if (chuoi_1[i] !== chuoi_2[j]) {
+                kiemtra=1;
+            }
+        }
+    }
+    if (kiemtra) {
+        document.write("Hai chuoi khac nhau");
+    } else {
+        document.write("Hai chuoi giong nhau");
+    }
+
+    document.write('<h1>' + "Bài 6:" + '</h1>');
+    let chuoi_3=prompt("Nhap chuoi")
+    for (i=0; i<chuoi_1.length; i++) {
+        if (chuoi_3[i] == '-') {
+            chuoi_3[i] = '_';
+        }
+    }
+    document.write(chuoi_3);
+
+</script>
+</body>
+</html>

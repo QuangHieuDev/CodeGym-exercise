@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[Bài tập]Chuyển đổi tiền tệ</title>
+</head>
+<body>
+<form>
+    <label>Amount<input type="number" name="amount" id="money" value=""/></label>
+    <select id="nation">
+        <option value="0">Việt Nam</option>
+        <option id="1">USA</option>
+    </select>
+    <select id="currency">
+        <option value="0">VND</option>
+        <option value="1">USD</option>
+    </select>
+    <button type="button" onclick="tiente()">Convert</button>
+</form>
+<script>
+    function tiente() {
+        let money0=document.getElementById('money').value;
+        // .innerHTML="" thay doi gia tri
+        // .value lấy giá trị của value
+        // console.log("") xem so loi
+        //document.getElementById('money').value=currency thay đổi giá trị trực tiếp vào value chỏ đến
+        let money= parseInt(money0);
+        //a= parseInt(prompt('Nhập')) nhận dạng số hoặc dùng number(prompt()), nếu dùng prompt nhận dạng chuỗi
+        let currency0=document.getElementById('currency').value;
+        let currency=parseInt(currency0);
+        if (currency == 0) {
+            document.write('Result: ' + money/20000 + 'USD');
+        } else{
+            document.write('Result: ' + money*20000 + 'VND');
+        }
+
+    }
+</script>
+</body>
+</html>

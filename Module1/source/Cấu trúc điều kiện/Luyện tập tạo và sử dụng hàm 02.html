@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[Bài tập] Luyện tập tạo và sử dụng hàm 02</title>
+</head>
+<body>
+<input type="text" id="bai1" value="" onchange="jaw1()">
+<script>
+    function jaw1() {
+        let num1=document.getElementById("bai1").value;
+        square= num1*num1;
+        document.write("Binh phương là: " + square);
+    }
+    function jaw2() {
+        let num1=document.getElementById("bai1").value;
+        acreage= num1*num1*3.24;
+        perimeter= 2*num1*3.14;
+        document.write("Dien tich là: " + acreage + "Chu vi la: " + perimeter);
+    }
+    function jaw3() {
+        let num1=document.getElementById("bai1").value;
+        for (i=num1; i>=0; i--) {
+            factorial *= (n-i);
+        }
+        document.write("Giai thua: " + square);
+    }
+    function jaw4() {
+        let num1=document.getElementById("bai1").value;
+        let checked=isNAN(num1);
+        document.write("Binh phương là: " + checked);
+    }
+
+</script>
+</body>
+</html>

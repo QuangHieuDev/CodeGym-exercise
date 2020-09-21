@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[Bài tập] Xây dựng lớp mô tả hình chữ nhật</title>
+</head>
+<body>
+<canvas id="mycanvas" width="300" height="200" style="border: 1px solid #56bd1f"></canvas>
+<script>
+    let square = new Rectangle(30,20);
+    function Rectangle(width,height) {
+        this.width = width;
+        this.height= height;
+        this.getAcreage = function () {
+            return this.width*this.height
+        };
+        this.getPerimeter = function () {
+            return (this.width + this.height)*2
+        };
+        this.getWidth = function () {
+            return this.width
+        };
+        this.getHeight = function () {
+            return this.height
+        };
+        this.setWidth = function () {
+            this.width = width
+        };
+        this.setHeight = function () {
+            this.height = height
+        };
+        this.getCanvas = function() {
+            let canvas = document.getElementById("mycanvas");
+            let ctx = canvas.getContext("2d");
+            ctx.fillStyle = "black";
+            ctx.fillRect(0,0,this.width,this.height);
+        }
+    }
+</script>
+</body>
+</html>

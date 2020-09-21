@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[Bài tập]Luyện tập vòng lặp 2</title>
+</head>
+<body>
+<h1>Bài 1:</h1>
+<script>
+    var a=1;
+    var b=0;
+    var num=0;
+    while (num <20) {
+        temp = a;
+        a= a+b;
+        b= temp;
+        document.write(a + '  ');
+        num++;
+    }
+</script>
+<h1>Bài 2:</h1>
+<script>
+    let n=10;
+    let giaithua=0;
+    for (let i=n; i>0; i--) {
+        giaithua *= (giaithua - i);
+    }
+    document.write(giaithua);
+</script>
+<h1>Bài 3:</h1>
+<script>
+    let dem=0;
+    let in_hinh=0;
+    while (dem<=5) {
+        for (in_hinh=0; in_hinh<=dem; in_hinh++) {
+            document.write("*");
+        }
+        dem++;
+        document.write('<br>');
+    }
+    while (dem<=5) {
+        for (in_hinh=(5-dem); in_hinh>0; in_hinh--) {
+            document.write("*");
+        }
+        dem++;
+        document.write('<br>');
+    }
+    while (dem<=5) {
+        for (in_hinh = 0; in_hinh <= dem; in_hinh++) {
+            document.write("&nbsp;");
+        }
+        for (in_hinh = (5 - dem); in_hinh > 0; in_hinh--) {
+            document.write("*");
+        }
+        dem++;
+        document.write('<br>');
+    }
+    while (dem<=5) {
+        for (in_hinh = 0; in_hinh <= dem; in_hinh++) {
+            document.write("*");
+        }
+        for (in_hinh = (5 - dem); in_hinh > 0; in_hinh--) {
+            document.write("&nbsp;");
+        }
+        dem++;
+        document.write('<br>');
+    }
+</script>
+<h1>Bài 4:</h1>
+<script>
+    let i , j ;
+    for ( i = 1 ; i <= 7 ; i++) {
+          for (j = 1 ; j <= 21 ; j++){
+              if (i==1 || i==7 || j==1 || j==21 ){
+                  document.write('*');
+              } else if ( i % 2 !=0 && j==1 || (i%2 !=0 && j==21)){
+                  document.write('*');
+              }
+          } else {
+                document.write("&nbsp&nbsp;")
+          }
+          }
+          document.write('<br>')
+    }
+</script>
+<h1>Bài 5:</h1>
+<script>
+    let money=parseInt(prompt('Tien gui la: '));
+    let month=parseInt(prompt('So thang gui la: '));
+    for (let money_month=0; money_month<month; money_month++) {
+        money = month + money*0.05;
+    }
+    document.write("So tien lai la: " + money);
+</script>
+<h1>Bài 6:</h1>
+<script>
+    let i , j ;
+    for ( i = 0 ; i<=5 ; i++ ){
+        for ( j = 0 ; j <= 6 ; j++){
+        }
+        if (( i==0 && j%3 !=0 ) || ( i==1 && j%3 == 0 ) || ( i - j == 2) || ( i+j==8)){
+            document.write( '*');
+        } else {
+            document.write('&nbsp&nbsp');
+        }
+    }
+    document.write('<br>')
+</script>
+</body>
+</html>

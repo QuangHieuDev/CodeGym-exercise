@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[*Bài tập] Ứng dụng good-fast-cheap</title>
+</head>
+<body>
+<div class="container">
+    <input type="checkbox" id="fast">
+    <label for="fast">fast</label>
+
+    <input type="checkbox" id="good">
+    <label for="good">good</label>
+
+    <input type="checkbox" id="cheap">
+    <label for="cheap">cheap</label>
+</div>
+<script>
+    const inp = Array.from(document.querySelectorAll("input"));
+    const change = ({target}) => {
+        if (inp.reduce((a, b) => a + b.checked, 0) === 3) {
+            inp.filter((elm) => elm !== target)[Date.now() % 2].checked = false;
+        }
+    }
+    document.body.addEventListener("change", change);
+</script>
+</body>
+</html>

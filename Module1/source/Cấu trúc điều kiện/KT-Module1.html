@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>KIỂM TRA GIỮA MODULE PRE-BOOTCAMP 01</title>
+</head>
+<body>
+<div>
+    <h2>Bài 1:</h2>
+    <label>Enter a number: <input type="number" id="numbers" value=""></label>
+    <button onclick="isSNT()">Show</button>
+    <p id="bt1"></p>
+</div>
+<div>
+    <h2>Bài 2:</h2>
+    <p id="bt2"></p>
+</div>
+<div>
+    <h2>Bài 3:</h2>
+    <label>Năm sinh: <input type="number" id="years" value=""></label>
+    <button onclick="yearOld()">Tính</button>
+    <p id="bt3"></p>
+</div>
+<div>
+    <h2>Bài 4: Số nguyên chia hết cho 3 hoặc 7 nằm  trong đoạn 1 đến 100</h2>
+    <p id="bt4"></p>
+</div>
+<div>
+    <h2>Bài 5: </h2>
+    <p id="bt5"></p>
+</div>
+
+
+<!--<div>
+    <div>
+        <input type="text" id="txt_add" style="width: 300px;height: 23px; background-color: lightblue" placeholder="New Product">
+        <button type="button" onclick="addNewProduct();loadProducts()"
+                style="height: 30px;background-color:  lightgreen">ADD NEW PRODUCT</button>
+        <hr>
+    </div>
+    <div id="products_board">
+    </div>
+
+</div>
+
+<div class="col60"><label></label></div>
+<div class="col20"></div>
+<div class="col20"></div> -->
+
+
+<script>
+    function isSNT() {
+        let n = document.getElementById('numbers').value;
+        let c = 1;
+        let N = 2;
+        while  (c <= n) {
+            if (isCheck(N)) {
+                document.getElementById('bt1').innerText += N + ' ,' ;
+                c++;
+            }
+            N++;
+        }
+
+    }
+
+    function isCheck(a) {
+        let checked = true;
+        for (i = 2;i <= Math.sqrt(a);i++) {
+            if (a % i === 0) {
+                checked = false;
+                break;
+            }
+        }
+        return checked;
+    }
+
+
+    let arr= new Array(10);
+    for (let i=0; i <10; i++) {
+        arr[i] = Math.floor(Math.random()*10);
+    }
+    function total(constan) {
+        let sum = 0;
+        for (let i=0; i < constan.length; i++) {
+            if (constan[i] % 2 !== 0)
+                sum += constan[i];
+        }
+        return sum;
+    }
+    let sum1 = total(arr);
+    document.getElementById('bt2').innerHTML = "Tổng các số lẻ trong mảng là: " + sum1;
+
+
+
+    function yearOld() {
+        let year = new Date().getFullYear();
+        let yd = document.getElementById('years').value;
+        if (yd < year) {
+            yearold = year -yd;
+            document.getElementById('bt3').innerHTML = "Tuổi: " + yearold;
+        } else {
+            document.getElementById('bt3').innerHTML = "Không hợp lệ";
+        }
+    }
+
+    let x=0;
+    for (let i=1; i <= 100; i++) {
+        if (i%3 === 0 || i%7 === 0) {
+            x++;
+        }
+        // if (isCheck(i)) {
+        //     if (i%3 === 0 || i%7 === 0) {
+        //         document.getElementById('bt4').innerHTML += i + "<br>";
+        //     }
+        // }
+    }
+    document.getElementById('bt4').innerHTML = x;
+
+    function totals(num) {
+        let arr = new Array(num,num);
+        let sum0 = 0;
+        for (let i = 0; i < num; i++) {
+            arr[i] = new Array(num);
+            for (let j = 0; j < num; j++) {
+                arr[i][j] = Math.floor(Math.random() * 10);
+                if (i===j) {
+                    sum0 += arr[i][j];
+                }
+            }
+        }
+        console.log(arr);
+        return sum0;
+    }
+    let sum = totals(30);
+    document.getElementById('bt5').innerHTML = "Tổng đường chéo chính của ma trận vuông: " + sum;
+
+
+
+    // let product_list = ['Samsung Galaxy S10','Apple iPhone 11','Oppo Reno','VinSmart Active','BPhone B86'];
+    // loadProducts();
+    //
+    // function loadProducts() {
+    //     let text = '<table class="product_table" id="table"><tr><td class="header"></td><td class="header"><b>Product</b></td><td class="header"></td><td class="header"></td></tr>';
+    //     for (let i = 0; i < product_list.length; i++) {
+    //         text += '<tr id="tr' + i + '"><td style="width: 30px">' + (i + 1) + '</td>' + '<td class="product_col" id="td' + i + '">' + product_list[i] + '</td>'
+    //             + '<td align="center" style="width: 62px"><input class="edit_button" type="button" onclick="editProduct(' + i + ')" value="EDIT"></td>'
+    //             + '<td align="center" style="width: 62px"><input class="delete_button" type="button" onclick="deleteProduct(' + i + ')" value="DELETE"></td>'
+    //             + '</tr>';
+    //     }
+    //     document.getElementById('products_board').innerHTML = text;
+    //
+    // }
+    //
+    // function addNewProduct() {
+    //     let newProduct = document.getElementById('txt_add').value;
+    //     if (newProduct != '') {
+    //         product_list.push(newProduct);
+    //         loadProducts()
+    //         document.getElementById('txt_add').value = null;
+    //     }
+    // }
+    //
+    // function editProduct(id) {
+    //     document.getElementById('td' + id).innerHTML = '<input class="textbox_edit" type="text" id="txt_edit"> <button class="save_button" type="button" onclick="saveProduct(' + id
+    //         + ')">SAVE</button> <button class="cancel_button" type="button" onclick="cancelEdit(' + id + ')">CANCEL</button>';
+    // }
+    //
+    // function saveProduct(id) {
+    //     let value = document.getElementById('txt_edit').value;
+    //     if (value != '') {
+    //         product_list[id] = value;
+    //         document.getElementById('td' + id).innerHTML = product_list[id];
+    //     }
+    // }
+    // function cancelEdit(id) {
+    //     document.getElementById('td' + id).innerHTML = product_list[id];
+    // }
+    //
+    // function deleteProduct(id) {
+    //     let answer = confirm('Are you sure that you want to delete product: ' + product_list[id] + '?');
+    //     if (answer) {
+    //         product_list.splice(id, 1);
+    //         loadProducts();
+    //     }
+    //
+    // }
+</script>
+
+</body>
+</html>

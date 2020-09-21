@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculator</title>
+</head>
+<body>
+<div>
+    <input type="text" id="a" placeholder="Nhap" size="15px">
+    <br>
+    <button onclick="nhap('1')">1</button>
+    <button onclick="nhap('2')">2</button>
+    <button onclick="nhap('3')">3</button>
+    <button onclick="nhap('+')">+</button>
+    <br>
+    <button onclick="nhap('4')">4</button>
+    <button onclick="nhap('5')">5</button>
+    <button onclick="nhap('6')">6</button>
+    <button onclick="nhap('-')">-</button>
+    <br>
+    <button onclick="nhap('7')">7</button>
+    <button onclick="nhap('8')">8</button>
+    <button onclick="nhap('9')">9</button>
+    <button onclick="nhap('*')">x</button>
+    <br>
+    <button onclick="reset()">c</button>
+    <button onclick="nhap('0')">0</button>
+    <button onclick="tinh()">=</button>
+    <button onclick="nhap('/')">/</button>
+</div>
+<script>
+
+    function nhap(number) {
+        document.getElementById('a').value += number;
+    }
+    function tinh() {
+        let k = document.getElementById('A').value;
+        document.getElementById('a').value = eval(k);
+    }
+    function reset() {
+        document.getElementById('a').value = null;
+    }
+</script>
+</body>
+</html>

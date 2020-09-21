@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[Bài tập] Ứng dụng vui DoYouLoveMe</title>
+    <style>
+
+    </style>
+</head>
+<body>
+<h1>Do homework?</h1>
+<input type="button" value="YES" onclick="yesClick()"/>
+<input type="button" id="nhanNo" value="NO" onmouseover="chay()" style="position:absolute; left:200px; top:50px;"/>
+<script>
+    function yesClick()
+    {
+        alert("Do it ");
+    }
+    function chay()
+    {
+        var x = Math.round(Math.random() * window.innerWidth);
+        var y = Math.round(Math.random() * window.innerHeight);
+        document.getElementById('nhanNo').style.left = x + 'px';
+        document.getElementById('nhanNo').style.top = y + 'px';
+    }
+</script>
+</body>
+</html>

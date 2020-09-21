@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Create User</title>
+</head>
+<body>
+<form action="/create" th:action="@{/create}" th:object="${user}" method="post">
+    <input type="number" th:field="*{id}" hidden>
+    <label>Name: <input type="text" th:field="*{name}"/></label>
+    <label th:each="gen:${gendersArray}">Gender:
+        <input type="radio" th:field="*{gender}" th:value="${gen}"/>
+    </label>
+</form>
+</body>
+</html>

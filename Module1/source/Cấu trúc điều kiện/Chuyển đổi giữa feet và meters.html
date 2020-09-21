@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[Bài tập] Chuyển đổi giữa feet và meters</title>
+</head>
+<body>
+<form style="text-align: center">
+    <label>Feet<input type="number" id="feet0" value=""></label>
+    <label>=<input type="number" id="meters0" value="">Meters</label>
+    <button type="button" onclick="chuyendaoi()">Chuyển đổi</button>
+    <button type="reset">Reset</button>
+    <input type="number" id="test" value="">
+</form>
+<script>
+    function chuyendaoi() {
+        let feet=document.getElementById("feet0").value;
+        let meters=document.getElementById("meters0").value;
+        let foot=0;
+        if (feet) {
+            foot = 0.305 * feet;
+            document.getElementById("meters0").value= foot;
+        } else {
+            foot = 3.279 * meters;
+            document.getElementById("feet0").value= foot;
+        }
+    }
+</script>
+</body>
+</html>

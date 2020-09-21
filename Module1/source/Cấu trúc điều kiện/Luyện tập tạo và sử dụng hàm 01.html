@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[Bài tập] Luyện tập tạo và sử dụng hàm 01</title>
+</head>
+<body>
+<script>
+    document.write('<h1>'+ "Bài 1:" + '</h1>' + '<br>');
+    alertMessage();
+    document.write('<h1>'+ "Bài 2:" + '</h1>' + '<br>');
+    doiso(2);
+    document.write('<h1>'+ "Bài 3:" + '</h1>' + '<br>');
+    let num_a= parseInt(prompt("Nhập số thứ nhất:"));
+    let num_b= parseInt(prompt("Nhập số thứu 2:"));
+    bai3(num_a,num_b);
+    document.write('<h1>'+ "Bài 4:" + '</h1>' + '<br>');
+    result = 0;
+    alert(result);
+    result = addNumbers();
+    alert(result);
+
+    function alertMessage() {
+        alert("Xin chao");
+    }
+    function doiso(doisoTruyen) {
+        doisoTruyen ++;
+        document.write(doisoTruyen);
+    }
+    function bai3(num_1, num_2) {
+        if (num_1>num_2) {
+            alert("Số thứ nhất lớn hơn số thứ hai.")
+        } else {
+            total= num_1 + num_2;
+            document.write("Tổng hai số là: " + total);
+        }
+
+    }
+    function addNumbers() {
+        firstNum = 4;
+        secondNum = 8;
+        result = firstNum + secondNum;
+        return result;
+    }
+
+    function star0() {
+        let arrStar1=["Polaris","Aldebaran","Deneb","Vega","Altair","Dubhe","Regulus"];
+        let arrStar2=["Ursa Minor","Tarurus","Cygnus","Lyra","Aquila","Ursa Major","Leo"];
+        let stars = document.getElementById("star").value;
+        for (let i=0; i<arrStar1.length; i++) {
+            if (stars === arrStar1[i]) {
+                document.getElementById("ketqua").innerHTML=arrStar2[i];
+                break;
+            }
+        }
+
+    }
+
+</script>
+<h1>Bài 5:</h1>
+<form>
+    <label>Nhập tên ngôi sao: <input type="text" id="star" onchange="star0()" value=""> Thuộc chòm sao: </label>
+    <label id="ketqua"></label>
+</form>
+
+</body>
+</html>

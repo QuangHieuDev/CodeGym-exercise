@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[Bài tập]Ứng dụng máy tính</title>
+</head>
+<body>
+<from>
+    <label><input type="text" id="num1" value=""/></label>
+    <label><input type="=text" id="num2" value=""></label>
+    <br>
+    <button type="button" onclick="addition()">Addition(+)</button>
+    <button type="button" onclick="subtraction()">Subtraction(-)</button>
+    <button type="button" onclick="multilication()">Multiplication(X)</button>
+    <button type="button" onclick="division()">Division(/)</button>
+    <p id="ketqua">Result </p>
+</from>
+<script>
+    function addition() {
+        let num_a=parseInt(document.getElementById("num1").value);
+        let num_b=parseInt(document.getElementById("num2").value);
+        let ad= num_a+num_b;
+        document.getElementById("ketqua").innerHTML= "Result Addition: "+ ad;
+    }
+    function subtraction() {
+        let num_a=parseInt(document.getElementById("num1").value);
+        let num_b=parseInt(document.getElementById("num2").value);
+        let su= num_a-num_b;
+        document.getElementById("ketqua").innerHTML= "Result subtraction: "+ su;
+    }
+    function multilication() {
+        let num_a=parseInt(document.getElementById("num1").value);
+        let num_b=parseInt(document.getElementById("num2").value);
+        let mu= num_a*num_b;
+        document.getElementById("ketqua").innerHTML= "Result multilication: "+ mu;
+    }
+    function division() {
+        let num_a=parseInt(document.getElementById("num1").value);
+        let num_b=parseInt(document.getElementById("num2").value);
+        let di= num_a/num_b;
+        document.getElementById("ketqua").innerHTML= "Result division: "+ di;
+    }
+</script>
+
+</body>
+</html>

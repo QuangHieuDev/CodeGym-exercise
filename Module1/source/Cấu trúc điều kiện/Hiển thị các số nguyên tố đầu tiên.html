@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[Bài tập]Hiển thị các số nguyên tố đầu tiên</title>
+</head>
+<body>
+<script>
+    // function isSNT(count) {
+    //     let n= 2;
+    //     let checked = true;
+    //     while (count < 20) {
+    //         for (let i = 2; i <= Math.sqrt(n)/2; i++) {
+    //             if (n%i === 0) {
+    //                 kiemtra = false;
+    //                 break;
+    //             }
+    //         }
+    //         if (checked === true) {
+    //             result += n;
+    //             count++;
+    //         }
+    //         n++;
+    //         checked = true;
+    //     }
+    //     return result;
+    //
+    // }
+    let n = parseFloat(prompt('Nhap so luong so nguyen to dau tien'));
+    let c = 1;
+    let checked = true;
+    let N = 2;
+    while  (c <= n) {
+        if (isCheck(N)) {
+            document.write(N+'<br>');
+            c++;
+        }
+        N++;
+    }
+    function isCheck(a) {
+        let checked = true;
+        for (i = 2;i <= Math.sqrt(a);i++) {
+            if (a % i === 0) {
+                checked = false;
+                break;
+            }
+        }
+        return checked;
+    }
+</script>
+</body>
+</html>

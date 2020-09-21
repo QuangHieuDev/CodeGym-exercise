@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="326c2447-f9ac-4d07-b68a-01c0201d3590" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../../../../Module2/Week-1/src/test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../Module3/Web-API/Web-Product/Web-Product.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../Module3/Web-API/WebDemo/WebDemo.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../Module3/Web-API/user-manager/user-manager.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/.name" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../UploadFile/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../UploadFile/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../UploadFile/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../UploadFile/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../UploadFile/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../UploadFile/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../UploadFile/src/main/java/com/AppConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../UploadFile/src/main/java/com/AppInit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../UploadFile/src/main/java/com/controller/MyFileUploadController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../UploadFile/src/main/java/com/form/MyUploadForm.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../UploadFile/src/main/webapp/WEB-INF/views/_menu.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../UploadFile/src/main/webapp/WEB-INF/views/uploadMultiFile.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../UploadFile/src/main/webapp/WEB-INF/views/uploadOneFile.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../UploadFile/src/main/webapp/WEB-INF/views/uploadResult.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../src/main/java/com/AppConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../src/main/java/com/AppInit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../src/main/java/com/DBC/UserDB.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../src/main/java/com/controller/LoginController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../src/main/java/com/controller/formController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../src/main/java/com/model/Login.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../src/main/java/com/model/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../src/main/webapp/views/html/form.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../src/main/webapp/views/jsp/error.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../src/main/webapp/views/jsp/form.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../src/main/webapp/views/jsp/home.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../src/main/webapp/views/jsp/user.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../OldProject/Spring-email/.idea/modules/Spring-email.main.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../OldProject/bt/bt.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../OldProject/cms/.idea/cms.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../OldProject/cms/.idea/modules/cms.cms.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../OldProject/demo1/.idea/demo1.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../OldProject/spring-email-validation/.idea/modules/spring-email-validation.main.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Week_4/.idea/Week_4.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../demo/.idea/Demo.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../demo/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../demo/Demo1/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../demo/Demo1/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../demo/Demo1/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../demo/Demo1/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../demo/Demo1/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../demo/Demo1/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../demo/Demo1/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../demo/Demo1/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../demo/SpringController-bt/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../demo/SpringController-bt/.idea/SpringController-bt.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../demo/SpringController-bt/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../demo/SpringController-bt/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../demo/SpringController-bt/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../demo/SpringController-bt/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../demo/SpringController-bt/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../demo/SpringController-bt/src/main/java/com/controller/AppConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../demo/SpringController-bt/src/main/java/com/controller/AppInit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../demo/Thymeleaf-demo/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../demo/Thymeleaf-demo/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../demo/Thymeleaf-demo/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../demo/Thymeleaf-demo/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../demo/Thymeleaf-demo/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../demo/Thymeleaf-demo/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../demo/Thymeleaf-demo/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../demo/Thymeleaf-demo/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../demo/Thymeleaf-demo/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../demo/Thymeleaf-demo/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../demo/Thymeleaf-demo/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../demo/Thymeleaf-demo/src/main/java/com/AppConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../demo/Thymeleaf-demo/src/main/java/com/AppInitializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../demo/Thymeleaf-demo/src/main/java/com/controller/Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../demo/Thymeleaf-demo/src/main/webapp/WEB-INF/views/Test.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Module2/Week-1/out/production/Week-1/BT/BT_Lop_Fan$Fan.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Module2/Week-1/out/production/Week-1/BT/BT_Lop_Fan$Fan.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Module2/Week-1/out/production/Week-1/BT/BT_Lop_Fan$Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Module2/Week-1/out/production/Week-1/BT/BT_Lop_Fan$Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Module2/Week-1/out/production/Week-1/META-INF/Week-1.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Module3/src/BT_Truyen.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Module3/src/BT_Truyen.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Module3/src/demo.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Module3/src/demo.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../WebDemo/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../WebDemo/.idea/artifacts/WebDemo_war_exploded.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../WebDemo/.idea/libraries/Java_EE_6_Java_EE_6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../WebDemo/.idea/libraries/jstl_1_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../WebDemo/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../WebDemo/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../WebDemo/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../WebDemo/WebDemo.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../WebDemo/lib/javax.annotation.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../WebDemo/lib/javax.ejb.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../WebDemo/lib/javax.jms.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../WebDemo/lib/javax.persistence.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../WebDemo/lib/javax.resource.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../WebDemo/lib/javax.servlet.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../WebDemo/lib/javax.servlet.jsp.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../WebDemo/lib/javax.servlet.jsp.jstl.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../WebDemo/lib/javax.transaction.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../WebDemo/out/artifacts/WebDemo_war_exploded/CurrencyConverter.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../WebDemo/out/artifacts/WebDemo_war_exploded/Login.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../WebDemo/out/artifacts/WebDemo_war_exploded/Product.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../WebDemo/out/artifacts/WebDemo_war_exploded/SimpleDictionary.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../WebDemo/out/artifacts/WebDemo_war_exploded/TimeServer.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../WebDemo/out/artifacts/WebDemo_war_exploded/WEB-INF/classes/ConverterServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../WebDemo/out/artifacts/WebDemo_war_exploded/WEB-INF/classes/LoginServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../WebDemo/out/artifacts/WebDemo_war_exploded/WEB-INF/classes/ProductServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../WebDemo/out/artifacts/WebDemo_war_exploded/WEB-INF/classes/ServerTimeServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../WebDemo/out/artifacts/WebDemo_war_exploded/WEB-INF/classes/TranslationServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../WebDemo/out/artifacts/WebDemo_war_exploded/WEB-INF/classes/demo.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../WebDemo/out/artifacts/WebDemo_war_exploded/WEB-INF/lib/jstl-1.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../WebDemo/out/artifacts/WebDemo_war_exploded/WEB-INF/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../WebDemo/out/artifacts/WebDemo_war_exploded/test.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../WebDemo/out/production/WebDemo/ConverterServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../WebDemo/out/production/WebDemo/LoginServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../WebDemo/out/production/WebDemo/ProductServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../WebDemo/out/production/WebDemo/ServerTimeServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../WebDemo/out/production/WebDemo/TranslationServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../WebDemo/src/ConverterServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../WebDemo/src/LoginServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../WebDemo/src/ProductServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../WebDemo/src/ServerTimeServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../WebDemo/src/TranslationServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../WebDemo/web/CurrencyConverter.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../WebDemo/web/Login.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../WebDemo/web/Product.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../WebDemo/web/SimpleDictionary.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../WebDemo/web/TimeServer.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../WebDemo/web/WEB-INF/lib/jstl-1.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../WebDemo/web/WEB-INF/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../WebDemo/web/test.jsp" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../.." />
+  </component>
+  <component name="ProjectId" id="1gM1mj0XMhup01vUudE1CFHUmrp" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="326c2447-f9ac-4d07-b68a-01c0201d3590" name="Default Changelist" comment="" />
+      <created>1597909807197</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1597909807197</updated>
+      <workItem from="1597909810440" duration="7000" />
+    </task>
+    <servers />
+  </component>
+</project>

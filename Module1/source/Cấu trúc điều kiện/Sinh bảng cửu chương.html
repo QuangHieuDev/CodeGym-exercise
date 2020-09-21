@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[Bài tập]Sinh bảng cửu chương</title>
+</head>
+<body>
+<script>
+    var sout;
+    sout="<table border='1' width='100%' cellspacing='2' cellpadding='3'>"
+    for (i=2; i<10; i++) {
+        sout =sout + "<tr>";
+        for (j= 1; j< 10; j++){
+            sout=sout + "<td>"+ i+ "x" +j+ "=" + i*j + "</td>";
+        }
+        sout= sout + "</tr>"
+    }
+    sout= sout + "</table>";
+    document.write(sout);
+</script>
+</body>
+</html>

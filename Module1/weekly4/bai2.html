@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    //Bài 2:
+    let num = parseInt(prompt("Nhập một số nguyên: "));
+    let arr = [0,1,2,3,4,5,6,7,8,9];
+    function tryRemoveFromArray(number,array) {
+        for (let i=0; i < array.length; i++) {
+            if (number == array[i]) {
+                array[i] = array[array.length-1];
+                array.pop();
+            }
+        }
+        return array;
+    }
+    let arrs = tryRemoveFromArray(num,arr);
+    console.log(arrs);
+</script>
+</body>
+</html>

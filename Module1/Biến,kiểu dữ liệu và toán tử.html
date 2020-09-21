@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[Bài tập]Biến, kiểu dữ liệu và toán tử</title>
+</head>
+<body>
+<h1>Bài 1</h1>
+<script>
+    a0=prompt('Nhập điểm môn vật lý');
+    b0=prompt('Nhập điểm môn hóa học');
+    c0=prompt('Nhập điểm môn sinh học');
+    var a= parseInt(a0);
+    var b= parseInt(b0);
+    var c= parseInt(c0);
+    var d=(a+b+c)/3;
+    document.write('Điểm trung bình:' +d);
+</script>
+<br/>
+<h1>Bài 2</h1>
+<script>
+    celsiuss=prompt('Nhập độ C');
+    var celsius= parseInt(celsiuss);
+    var fahrenheir= celsius*9/5 +32;
+    document.write('Độ F là:' +fahrenheir);
+</script>
+<br/>
+<h1>Bài 3,4</h1>
+<script>
+    r0=prompt('Bán kính hình tròn');
+    var r=parseInt(r0);
+    var s=r*r*3.14;
+    var c1=2*r*3.14;
+    document.write('Diện tích hình tròn:' +s);
+    document.write('<br/>')
+    document.write('Chu vi hình tròn:' +c1);
+</script>
+</body>
+</html>

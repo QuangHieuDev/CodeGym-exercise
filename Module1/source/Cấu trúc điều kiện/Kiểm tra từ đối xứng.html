@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[*Bài tập] Kiểm tra từ đối xứng</title>
+</head>
+<body>
+<form>
+    <label>Nhập từ cần kiểm tra: <input type="text" id="palindrome" value="" style="width: 50px"></label>
+    <button type="button" onclick="isPalindrome()">Kiểm tra</button>
+    <br>
+    <label id="check"></label>
+</form>
+<script>
+    function isPalindrome() {
+        let arr = document.getElementById("palindrome").value;
+        let check = true;
+        let palindrome;
+        if (arr[0] == arr[arr.length-1]) {
+            for (let i = 1; i < arr.length - 1; i++) {
+                if (arr[i] !== arr[arr.length-i-1]) {
+                    check = false;
+                    break;
+                }
+            }
+        } else {
+            check = false;
+        }
+        if (check) {
+            palindrome= "Is isPalindrome";
+        } else {
+            palindrome= "Not palindrome";
+        }
+        document.getElementById("check").innerHTML= palindrome;
+
+    }
+</script>
+</body>
+</html>

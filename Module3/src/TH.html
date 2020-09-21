@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Test</title>
+    <style>
+        div{
+
+        }
+        p.a1{
+            color: green !important;/* sd important để nâng bậc ưu tiên*/
+            /*text-align: center;*/
+            font-size: 40px;
+            padding: 10px;
+            font-family: "Times New Roman";
+            font-style: italic;
+        }
+        p.a2{
+            color: red;
+            /*text-align: left;*/
+            font-size: 40px;
+            margin-left: 10px;
+        }
+
+        ul.a{
+            font-size: 30px;
+            /*list-style-type: circle;*/
+
+            /*list-style-image: url('http://agilearn.vn/draftfile.php/263/user/draft/510120718/bullet_red%20_2.png');*/
+
+            /*list-style-position:inside; !* outside *!*/
+
+            list-style: square inside url("http://agilearn.vn/draftfile.php/263/user/draft/510120718/bullet_red%20_2.png");
+        }
+
+
+        th, tr, td{
+            border: 1px solid black;
+        }
+        table{
+             color: orange;
+             width: 80%;
+             border-collapse: collapse;
+            border: 2px solid black;
+         }
+        td {
+            height: 50px;
+            vertical-align: top;
+        }
+        td:nth-child(odd){
+            background: green;
+        }
+        th:nth-child(even){
+            background: blue;
+        }
+
+        div {
+            border: 1px solid black;
+            padding: 10px;
+            width: 250px;
+            height: 250px;
+            text-align: justify;
+        }
+
+        a{
+            text-decoration: none;
+            color: black;
+        }
+        h1{
+            text-transform: uppercase; /*lowercase, capitalize*/
+            text-indent: 50px; /*thụt lề*/
+            letter-spacing: 3px; /*khảng cách giữa các chữ*/
+            word-spacing: 2px; /*Khoảng cách giữa các từ*/
+            line-height: 0.7; /*Chiều cao dòng*/
+        }
+
+    </style>
+</head>
+<body>
+<h1>Bỏ gạch chân của liên kết: <a href="http://tapchilaptrinh.vn">TapChiLapTrinh.vn</a></h1>
+<p class="a1">AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</p>
+<p class="a2">BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB</p>
+<div>
+    <ul class="a">
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Coca Cola</li>
+    </ul>
+    <ol>
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Coca Cola</li>
+    </ol>
+</div>
+<div>
+    <table>
+        <tr>
+            <th>Họ tên</th>
+            <th>Tên</th>
+            <th colspan="2">003</th>
+        </tr>
+        <tr>
+            <td>Nguyễn Khắc</td>
+            <td>Nhật</td>
+            <td>002</td>
+            <td>00a</td>
+        </tr>
+        <tr>
+            <td colspan="2">Nguyễn Thị</td>
+            <td>Phương</td>
+            <td>001</td>
+        </tr>
+    </table>
+</div>
+</body>
+</html>

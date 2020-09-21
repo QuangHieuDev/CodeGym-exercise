@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[Bài tập]Luyện tập vòng lặp 1</title>
+</head>
+<body>
+<h1>Bài 1:</h1>
+<script>
+    for (i=1; i<100; i++) {
+        if (i==99) {
+            alert('Hoàn thành');
+            document.write('Hoàn thành');
+        }
+    }
+</script>
+<h1>Bài 2: </h1>
+<script>
+    var a1=prompt('Nhiệt độ hiện tại là: ');
+    if (a1<=100) {
+        if (a1<20) {
+            document.write('Tăng nhiệt độ');
+        }
+    } else {
+        document.write('Giảm nhiệt độ');
+    }
+</script>
+<h1>Bài 3:</h1>
+<script>
+    var a=1;
+    var b=0;
+    var num=0;
+    while (num <20) {
+        temp = a;
+        a= a+b;
+        b= temp;
+        document.write(a + '  ');
+        num++;
+    }
+</script>
+<h1>Bài 5:</h1>
+<script>
+    var a=1;
+    var b=0;
+    var c=0
+    var num=0;
+    while (num <20) {
+        temp = a;
+        a= a+b;
+        b= temp;
+        num++;
+        c += a;
+    }
+    document.write(c);
+</script>
+<h1>Bài 4:</h1>
+<script>
+    var a=1;
+    var b=0;
+    var num=0;
+    while (num <20) {
+        temp = a;
+        a= a+b;
+        b= temp;
+        if (a%5 === 0) {
+            document.write(a);
+            break;
+        }
+        num++;
+    }
+</script>
+<h1>Bài 6:</h1>
+<script>
+    var tong=0
+    for (i=1; i<31; i++) {
+        tong=tong + i*7;
+    }
+    document.write(tong)
+</script>
+<h1>Bài 7:</h1>
+<script>
+    for (i=1; i<101; i++) {
+        if (i%15==0) {
+            document.write('FizzBuzz' + '<br>');
+        } else {
+            if (i%3==0) {
+                document.write('Fizz' + '<br>');
+            } else {
+                if (i%5==0) {
+                    document.write('Buzz'+ '<br>');
+                } else{
+                    document.write(i + '<br>');
+                }
+            }
+        }
+    }
+
+</script>
+<h1>Bài 8</h1>
+<button type="reset" onclick="doan()" > Chơi </button>
+<script>
+    function doan() {
+        let A;
+        A=parseInt(prompt("Nhập khoảng 1 -> 3"));
+        switch (A) {
+            case 1 : {
+                let n=0;
+                while (n<3){
+                    let B=parseInt(prompt("Nhập từ 1 -> 10"));
+                    let C=Math.floor(Math.random() * 10) + 1;
+                    if ( B == C){
+                        document.write("Thắng");
+                        n=n+3;
+                    }
+                    else {
+                        n+=1;
+                    }
+                }
+                if (n === 3){
+                    document.write("End");
+                }
+                break;
+            }
+            case  2 : {
+                let n=0;
+                while (n<3){
+                    let E=parseInt(prompt('Nhập từ 2 -> 20'));
+                    let F=function getRndInteger(min,max) {
+                        return Math.floor(Math.random() * (20 - 2 + 1) ) + 2;
+                    }
+                    if ( E === F){
+                        document.write("Thắng");
+                        n=n+3;
+                    }
+                    else {
+                        n+=1;
+                    }
+                }
+                if (n === 3){
+                    document.write("End");
+                }
+                break;
+            }
+            case 3 : {
+                let n=0;
+                while (n<3){
+                    let E=parseInt(prompt('Nhập từ 3 -> 30'));
+                    let F=function getRndInteger(min,max) {
+                        return Math.floor(Math.random() * (30 - 3 + 1) ) + 3;
+                    }
+                    if ( E === F){
+                        document.write("Thắng");
+                        n=n+3;
+                    }
+                    else {
+                        n+=1;
+                    }
+                }
+                if (n === 3){
+                    document.write("End");
+                }
+                break;
+            }
+        }
+    }
+</script>
+</body>
+</html>

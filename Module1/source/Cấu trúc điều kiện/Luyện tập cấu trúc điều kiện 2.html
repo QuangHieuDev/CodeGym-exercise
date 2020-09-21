@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[Bài tập]Luyện tập cấu trúc điều kiện 2</title>
+</head>
+<body>
+<h1>Bài 1:</h1>
+<script>
+    let nhietdo=parseInt(prompt("Nhiet do: "));
+    let dof= nhietdo*9/5 + 32;
+    document.write("Nhiet do: " + dof + " do F");
+</script>
+<h1>Bài 2:</h1>
+<script>
+    let m=parseInt(prompt("Do dai: "));
+    let ft=m*3.2808;
+    document.write("Do dai la: "+ ft +" feet");
+</script>
+<h1>Bài 3:</h1>
+<script>
+    let a=parseInt(prompt("Do dai canh a: "));
+    document.write("Dien tich hinh vuong la: " + a*a);
+</script>
+<h1>Bài 4:</h1>
+<script>
+    let dai=parseInt(prompt("Chieu dai hcn la: "));
+    let rong=parseInt(prompt("Chieu rong hcn la: "));
+    document.write("Dien tich hinh chu nhat la: " dai*rong);
+</script>
+<h1>Bài 5:</h1>
+<script>
+    let canh1=parseInt(prompt("Do dai canh ke thu nhat: "));
+    let canh2=parseInt(prompt("Do dai canh ke thu 2: "));
+    let shv=canh1*canh2/2;
+    document.write("Dien tich tam giac la: " + shv);
+</script>
+<h1>Bài 6:</h1>
+<script>
+    let num_a=parseInt(prompt("Nhập a của bieu thuc ax+b=0: "));
+    let num_b=parseInt(prompt("Nhap b cua bieu thuc ax+b=0: "));
+    let num_x= -num_b/num_a;
+    if (a === 0) {
+        if (b === 0) {
+            document.write("Phuong trinh co vo so nghiem");
+        } else {
+            document.write("Phuong trinh vo nghiem");
+        }
+    } else {
+        document.write("Nghiem cuar phuong trinh la: " + num_x);
+    }
+</script>
+<h1>Bài 7:</h1>
+<script>
+    let numa=parseInt(prompt("Nhap gia tri cua a trong bieu thuc bac 2"));
+    let numb=parseInt(prompt("Nhap gia tri cua b trong bieu thuc bac 2"));
+    let numc=parseInt(prompt("Nhap gia tri cua b trong bieu thuc bac 2"));
+    let delta= b*b-4*a*c;
+    if (delta === 0) {
+        document.write("Phuong trinh co nghiem kep x1=x2");
+    } else {
+        if (delta>0) {
+            document.write("Phuong trinh co 2 nghiem x1, x2");
+        } else {
+            document.write("Phuong trinh vo nghiem");
+        }
+    }
+</script>
+<h1>Bài 8:</h1>
+<script>
+    let sotuoi=parseInt(prompt("So tuoi la: "));
+    if (sotuoi>0) {
+        if (sotuoi<100) {
+            document.write(sotuoi + "la tuoi cua mot nguoi");
+        } else {
+            document.write(sotuoi + "khong la so tuoi cua mot nguoi");
+        }
+    } else {
+        document.write(sotuoi + "khong la so tuoi cua mot nguoi");
+    }
+</script>
+<h1>Bài 9:</h1>
+<script>
+    let sothuc_a=parseInt(prompt("Nhap so thuc a:"));
+    let sothuc_b=parseInt(prompt("Nhap so thuc b:"));
+    let sothuc_c=parseInt(prompt("Nhap so thuc c:"));
+    let tongabc=a+b+c;
+    if (tongabc === 0) {
+        if (a+b === c) {
+            document.write("a, b, c la 3 canh cua tam giac");
+        } else {
+            if (a+c === b) {
+                document.write("a, b, c la 3 canh cua tam giac");
+            } else {
+                if (b+c === a) {
+                    document.write("a, b, c la 3 canh cua tam giac");
+                } else {
+                    document.write("a, b, c khong la 3 canh cua tam giac");
+                }
+            }
+        }
+    }
+</script>
+<h1>Bài 10:</h1>
+<script>
+    let sodien=parseInt(prompt("So dien can tinh la: "));
+    document.write("Tien dien la: " + sodien*2000 + "VND");
+</script>
+<h1>Bài 11:</h1>
+<script>
+    let thuethunhap=parseInt(prompt("So tien tinh thue thu nhap ca nhan: "));
+    document.write("Tien thue thu nhap ca nhan: " + thuethunhap*0.01 + "VND");
+</script>
+<h1>Bài 12:</h1>
+<script>
+    let money=parseInt(prompt("So tien gui la: "));
+    let thang=parseInt(prompt("So thang gui la: "));
+    let lai=0;
+    for (let i=1; i<=thang; i++) {
+        lai= money*0.005
+        money = money + lai;
+    }
+    document.write("So tien lai la: " + lai);
+</script>
+</body>
+</html>

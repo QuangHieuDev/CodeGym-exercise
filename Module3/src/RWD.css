@@ -1,0 +1,11 @@
+@media only screen and (max-width: 500px) {
+    /*orientation: landscape chiều xoay màn hình*/
+    body{
+        background-color: lightblue;
+    }
+}
+
+div{
+    position: absolute;
+    left: 20px;
+}

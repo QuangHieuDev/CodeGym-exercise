@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[Bài tập] Xây dựng lớp mô tả Temperature</title>
+</head>
+<body>
+<script>
+    function Temperature(c) {
+        this.c = c;
+        this.getC = function () {
+            return this.c;
+        };
+        this.setC = function (c) {
+            if (c < -273){
+                this.c = -273;
+            } else {
+                this.c = c;
+            }
+        };
+        this.getF = function () {
+            return this.c * 1.8 + 32;
+        };
+        this.getKenvin = function () {
+            return this.c + 273;
+        };
+    }
+
+    let c = new Temperature(100);
+    document.write("Độ F: " + c.getF() +", Độ Kenvin: "+ c.getKenvin());
+</script>
+</body>
+</html>

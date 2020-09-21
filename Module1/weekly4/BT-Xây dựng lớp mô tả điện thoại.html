@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[Bài tập] Xây dựng lớp mô tả điện thoại</title>
+</head>
+<body>
+<!-- <script>
+    function Mobile(inbox,draft,sent,battery) {
+        this.battery = battery;
+        this.inbox = inbox;
+        this.draft = draft;
+        this.sent = sent;
+        this.on = true;
+        this.getBattery = function () {
+            return this.battery;
+        };
+        this.turnOn = function () {
+            this.on = true;
+        }
+        this.turnOff = function () {
+            this.on = false;
+        }
+        this.checkOn = function () {
+            if (this.on === true){
+                console.log("đang bật")
+            }
+            else {
+                console.log("đã tắt")
+            }
+        };
+        this.charge = function () {
+            if(this.battery < 100){
+                this.battery ++;
+                console.log(this.battery)
+            }
+            else {
+                alert("đã sạc đầy pi")
+            }
+        };
+        this.setDraft = function (draft) {
+            draft = document.getElementById("iphone").value;
+            if (this.on && this.battery > 0){
+                this.draft = draft;
+                this.battery --;
+            }
+            else {
+                console.log("không sử dụng được")
+            }
+        };
+
+        this.setDraft1 = function (draft) {
+            draft = document.getElementById("nokia").value;
+            if (this.on && this.battery > 0){
+                this.draft = draft;
+                this.battery --;
+            }
+            else {
+                console.log("không sử dụng được")
+            }
+        };
+
+        this.setMess = function (mobile , x ) {
+
+            if (this.on && this.battery > 0) {
+                mobile.inbox.push(x);
+                this.sent.push(x);
+                this.draft = "";
+                this.battery--;
+                document.getElementById("nokiaMess").innerText = x;
+            } else {
+                console.log("không gửi được")
+            }
+        }
+        this.setMess1 = function (phone , draft ) {
+
+            if (this.on && this.battery > 0) {
+                phone.inbox.push(draft);
+                this.sent.push(draft);
+                this.draft = "";
+                this.battery--;
+                document.getElementById("iphoneMess").innerText = draft;
+            } else {
+                console.log("không gửi được")
+            }
+        }
+        this.setInbox = function () {
+            this.inbox = inbox;
+            document.getElementById("iphoneMess2").innerText = this.inbox;
+        }
+        this.setInbox2 = function () {
+            this.inbox = inbox;
+            document.getElementById("nokiaMess2").innerText = this.inbox;
+        }
+        this.setSent = function () {
+            this.sent =sent;
+            document.getElementById("iphoneMess3").innerText = this.sent;
+        }
+        this.setSent1 = function () {
+
+            document.getElementById("nokiaMess3").innerText = this.sent;
+        }
+
+    };
+
+    let iphone = new Mobile([],"",[],50);
+    let nokia = new Mobile([],"",[],50);
+</script>
+<div class="iphone"  >
+    <p>Iphone</p>
+    <p>
+        <input id="iphone" type="text"></p>
+    <p>
+        <button onclick= "iphone.charge()">Sạc</button>
+        <button onclick= "iphone.setDraft()">Soạn tin</button>
+        <button onclick="iphone.setMess(nokia , iphone.draft)" >Gửi</button>
+        <span id="iphoneMess"> </span>
+        <button onclick="iphone.setInbox()" >Hộp thư đến</button>
+        <span id="iphoneMess2"></span>
+        <button onclick="iphone.setSent()" >Đã gửi</button>
+        <span id="iphoneMess3"></span></p>
+</div>
+<div class="nokia"  >
+    <p>Nokia
+    <p>
+        <input id="nokia" type="text"></p>
+    <p>
+        <button onclick= "nokia.charge()">Sạc</button>
+        <button onclick= "nokia.setDraft1()">Soạn tin</button>
+        <button onclick="nokia.setMess1(iphone, nokia.draft)" >Gửi</button>
+        <span id="nokiaMess"></span>
+        <button onclick="nokia.setInbox2()" >Hộp thư đến</button>
+        <span id="nokiaMess2"></span>
+        <button onclick="nokia.setSent1()" >Đã gửi</button>
+        <span id="nokiaMess3"></span></p>
+</div> -->
+
+</body>
+</html>

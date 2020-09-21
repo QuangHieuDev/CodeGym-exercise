@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[BÀi tập] Ứng dụng chuyển đổi tiền tệ</title>
+</head>
+<body>
+<form>
+    <p style="position:relative; left: 5%">Amount</p>
+    <label><input type="number" name="a0" value="a"></label>
+    <p style="position:relative; left:20%">From Currency</p>
+    <select>
+        <option>Việt Nam</option>
+        <option>United States</option>
+    </select>
+    <p style="position:relative; left: 5%">To Curebcy</p>
+    <select>
+        <option>VND</option>
+        <option>USD</option>
+    </select>
+</form>
+<script>
+    var a=parseInt(a0);
+    var b=a/20000;
+    document.write('Result:' +b+ 'USD')
+
+</script>
+</body>
+</html>

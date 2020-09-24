@@ -9,6 +9,7 @@ export class AppComponent {
   titles = 'hackernews';
   title = 'Title News';
   url = 'Url News';
+  isCountDown = '';
   articles = [
     {
       title: 'The Evolution of Async JavaScript: From Callbacks, to Promises, to Async/Await',
@@ -35,5 +36,9 @@ export class AppComponent {
     this.title = (document.getElementById('article-title') as HTMLInputElement).value;
     this.url = (<HTMLInputElement> document.getElementById('article-url')).value;
     this.articles.push({title: this.title, url: this.url});
+  }
+
+  finishCountDown() {
+    this.isCountDown = 'Ket thuc';
   }
 }

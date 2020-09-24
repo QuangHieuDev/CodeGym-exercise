@@ -6,7 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'hackernews';
+  titles = 'hackernews';
+  title = 'Title News';
+  url = 'Url News';
   articles = [
     {
       title: 'The Evolution of Async JavaScript: From Callbacks, to Promises, to Async/Await',
@@ -29,13 +31,9 @@ export class AppComponent {
       url: 'https://ruslanspivak.com/lsbaws-part1/'
     }
   ];
-  article = {
-    title: 'Title News',
-    url: 'Url News'
-  };
   addArticle() {
-    this.article.title = (document.getElementById('article-title') as HTMLInputElement).value;
-    this.article.url = (<HTMLInputElement> document.getElementById('article-url')).value;
-    this.articles.push(this.article);
+    this.title = (document.getElementById('article-title') as HTMLInputElement).value;
+    this.url = (<HTMLInputElement> document.getElementById('article-url')).value;
+    this.articles.push({title: this.title, url: this.url});
   }
 }

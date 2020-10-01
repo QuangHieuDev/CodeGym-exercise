@@ -16,7 +16,7 @@ import { PetComponent } from './pet/pet.component';
     CalculatorComponent,
     ColorPickerComponent,
     FontSizeEditorComponent,
-    PetComponent
+    PetComponent,
   ],
   imports: [
     BrowserModule,

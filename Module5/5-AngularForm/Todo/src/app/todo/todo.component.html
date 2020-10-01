@@ -1,3 +1,17 @@
-<p>
-  todo works!
-</p>
+<h2 class="text-center">
+  Todo App
+</h2>
+<div class="col-md-8 offset-md-2">
+  <div>
+    <input id="todo" class="form-control" type="text" [formControl]="userInput" (change)="onChange()">
+    <input class="btn btn-primary" type="button" value="Submit" >
+  </div>
+
+  <ul>
+    <li (click)="toggleTodo(i)"
+        [class.complete]="todo.complete"
+        *ngFor="let todo of todos; index as i">
+      {{todo.content}}
+    </li>
+  </ul>
+</div>

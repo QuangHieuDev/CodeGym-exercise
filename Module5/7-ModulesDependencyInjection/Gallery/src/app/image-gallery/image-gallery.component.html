@@ -1,0 +1,18 @@
+<div class="gallery-container">
+  <div class="gallery-item" *ngFor="let img of listImage">
+    <app-image-card [src]="img"></app-image-card>
+  </div>
+</div>
+<hr>
+<div class="gallery-container">
+  <div class="gallery-item" *ngFor="let img of listImage"
+       [style.max-width.%]="itemWidth" [style.flex-basis.%]="itemWidth">
+    <app-image-card [src]="img"></app-image-card>
+  </div>
+</div>
+<hr>
+<div style="">
+  <app-image-card [src]="listImage[url]"></app-image-card>
+  <button type="button" value="pre" (click)="update(-1)">Previos</button>
+  <button type="button" value="next" (click)="update(1)">Next</button>
+</div>

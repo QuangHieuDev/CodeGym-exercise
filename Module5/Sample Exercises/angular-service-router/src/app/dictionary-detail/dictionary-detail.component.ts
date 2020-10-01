@@ -18,15 +18,6 @@ export class DictionaryDetailComponent implements OnInit, OnDestroy {
     ) { }
 
   ngOnInit() {
-    /*
-    const {snapshot} = this.activatedRoute;
-    const key = snapshot.paramMap.get('key');
-    const meaning = this.dictionaryService.search(key);
-    this.word = {
-      key: key,
-      meaning: meaning
-    };
-    */
     this.sub = this.activatedRoute.paramMap.subscribe((paramMap: ParamMap) => {
       const key = paramMap.get('key');
       const meaning = this.dictionaryService.search(key);

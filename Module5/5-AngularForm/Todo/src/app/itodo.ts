@@ -1,2 +1,5 @@
-export interface ITodo {
+interface ITodo {
+  id: number;
+  content: string;
+  complete: boolean;
 }

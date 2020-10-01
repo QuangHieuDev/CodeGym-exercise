@@ -16,13 +16,14 @@ export class EditComponent implements OnInit, OnDestroy {
   constructor(
     private productService: ProductService,
     private activatedRoute: ActivatedRoute
-  ) { }
+  ) {
+  }
 
   ngOnInit(): void {
-    this.subscription =this.activatedRoute.paramMap.subscribe((paramMap: ParamMap) => {
+    this.subscription = this.activatedRoute.paramMap.subscribe((paramMap: ParamMap) => {
       const id = +paramMap.get('id');
       this.product = this.productService.findProductById(id);
-    })
+    });
   }
 
   update() {
